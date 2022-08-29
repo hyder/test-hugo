@@ -30,8 +30,6 @@ jobs:
 
       - run: gem install rouge
 
-      - run: rougify style molokai > static/css/molokai.css
-
       - name: Run Hugo
         run: |
           cd docs && alias asciidoctor="asciidoctor --attribute=experimental=true --attribute=icons=font"
