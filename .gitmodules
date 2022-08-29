@@ -10,3 +10,6 @@
 [submodule "docs/themes/doks"]
 	path = docs/themes/doks
 	url = https://github.com/h-enk/doks.git
+[submodule "docs/themes/ace"]
+	path = docs/themes/ace
+	url = https://github.com/vantagedesign/ace-documentation.git
