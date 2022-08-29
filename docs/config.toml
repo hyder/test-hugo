@@ -1,7 +1,7 @@
 baseURL = 'https://hyder.github.io/test-hugo/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-theme = "ace"
+theme = "learn"
 
 [security]
 enableInlineShortcodes = false
