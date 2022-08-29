@@ -7,3 +7,6 @@
 [submodule "docs/themes/techdoc"]
 	path = docs/themes/techdoc
 	url = https://github.com/thingsym/hugo-theme-techdoc.git
+[submodule "docs/themes/doks"]
+	path = docs/themes/doks
+	url = https://github.com/h-enk/doks.git
