@@ -1,1 +1,107 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>My New Hugo Site</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content><meta name=generator content="Hugo 0.101.0"><meta name=robots content="noindex, nofollow"><link rel=stylesheet href=/test-hugo/ananke/css/main.min.css><meta property="og:title" content><meta property="og:description" content><meta property="og:type" content="article"><meta property="og:url" content="https://hyder.github.io/test-hugo/posts/quickstart/"><meta property="article:section" content="posts"><meta itemprop=name content><meta itemprop=description content><meta itemprop=wordCount content="0"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content></head><body class="ma0 avenir bg-near-white"><header><div class=bg-black><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l justify-between items-center center"><a href=/test-hugo/ class="f3 fw2 hover-white no-underline white-90 dib">My New Hugo Site</a><div class="flex-l items-center"><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="flex-l flex-wrap justify-between mw8 center ph3"><header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked">POSTS</aside><div id=sharing class="mt3 ananke-socials"></div><h1 class="f1 athelas mt3 mb1"></h1></header><div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><ul class=pa0></ul><div class="mt6 instapaper_ignoref"></div></div><aside class="w-30-l mt6-l"></aside></article></main><footer class="bg-black bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=https://hyder.github.io/test-hugo/>&copy; My New Hugo Site 2022</a><div><div class=ananke-socials></div></div></div></footer></body></html>
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>My New Hugo Site</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="1. Assumptions You have setup the required keys
+You know the required OCIDs
+You have set the necessary OKE policy
+2. Prerequisites git is installed
+ssh client is installed
+Terraform 1.0.0+ is installed
+3. Provision using this git repo Clone the repo:
+git clone https://github.com/oracle-terraform-modules/terraform-oci-oke.git tfoke cd tfoke cp terraform.tfvars.example terraform.tfvars 3.1. Creating Providers You need to create 2 providers: .. 1 provider for the region where your OKE cluster and other resources will be created ."><meta name=generator content="Hugo 0.101.0"><meta name=robots content="noindex, nofollow"><link rel=stylesheet href=/test-hugo/ananke/css/main.min.css><meta property="og:title" content><meta property="og:description" content="1. Assumptions You have setup the required keys
+You know the required OCIDs
+You have set the necessary OKE policy
+2. Prerequisites git is installed
+ssh client is installed
+Terraform 1.0.0+ is installed
+3. Provision using this git repo Clone the repo:
+git clone https://github.com/oracle-terraform-modules/terraform-oci-oke.git tfoke cd tfoke cp terraform.tfvars.example terraform.tfvars 3.1. Creating Providers You need to create 2 providers: .. 1 provider for the region where your OKE cluster and other resources will be created ."><meta property="og:type" content="article"><meta property="og:url" content="https://hyder.github.io/test-hugo/posts/quickstart/"><meta property="article:section" content="posts"><meta itemprop=name content><meta itemprop=description content="1. Assumptions You have setup the required keys
+You know the required OCIDs
+You have set the necessary OKE policy
+2. Prerequisites git is installed
+ssh client is installed
+Terraform 1.0.0+ is installed
+3. Provision using this git repo Clone the repo:
+git clone https://github.com/oracle-terraform-modules/terraform-oci-oke.git tfoke cd tfoke cp terraform.tfvars.example terraform.tfvars 3.1. Creating Providers You need to create 2 providers: .. 1 provider for the region where your OKE cluster and other resources will be created ."><meta itemprop=wordCount content="482"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content><meta name=twitter:description content="1. Assumptions You have setup the required keys
+You know the required OCIDs
+You have set the necessary OKE policy
+2. Prerequisites git is installed
+ssh client is installed
+Terraform 1.0.0+ is installed
+3. Provision using this git repo Clone the repo:
+git clone https://github.com/oracle-terraform-modules/terraform-oci-oke.git tfoke cd tfoke cp terraform.tfvars.example terraform.tfvars 3.1. Creating Providers You need to create 2 providers: .. 1 provider for the region where your OKE cluster and other resources will be created ."></head><body class="ma0 avenir bg-near-white"><header><div class=bg-black><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l justify-between items-center center"><a href=/test-hugo/ class="f3 fw2 hover-white no-underline white-90 dib">My New Hugo Site</a><div class="flex-l items-center"><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="flex-l flex-wrap justify-between mw8 center ph3"><header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked">POSTS</aside><div id=sharing class="mt3 ananke-socials"></div><h1 class="f1 athelas mt3 mb1"></h1></header><div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><div class=sect1><h2 id=assumptions><a class=link href=#assumptions>1. Assumptions</a></h2><div class=sectionbody><div class="olist arabic"><ol class=arabic><li><p>You have setup the <a href=https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm>required keys</a></p></li><li><p>You know the <a href=https://docs.cloud.oracle.com/iaas/Content/API/Concepts/apisigningkey.htm#five>required OCIDs</a></p></li><li><p>You have set the <a href=https://docs.cloud.oracle.com/iaas/Content/ContEng/Concepts/contengpolicyconfig.htm#PolicyPrerequisitesService>necessary OKE policy</a></p></li></ol></div></div></div><div class=sect1><h2 id=prerequisites><a class=link href=#prerequisites>2. Prerequisites</a></h2><div class=sectionbody><div class="olist arabic"><ol class=arabic><li><p>git is installed</p></li><li><p>ssh client is installed</p></li><li><p>Terraform 1.0.0+ is installed</p></li></ol></div></div></div><div class=sect1><h2 id=provision-using-this-git-repo><a class=link href=#provision-using-this-git-repo>3. Provision using this git repo</a></h2><div class=sectionbody><div class="olist arabic"><ol class=arabic><li><p>Clone the repo:</p><div class=listingblock><div class=content><pre class=highlight><code class=language-bash data-lang=bash>git clone https://github.com/oracle-terraform-modules/terraform-oci-oke.git tfoke
+
+cd tfoke
+cp terraform.tfvars.example terraform.tfvars</code></pre></div></div></li></ol></div><div class=sect2><h3 id=creating-providers><a class=link href=#creating-providers>3.1. Creating Providers</a></h3><div class=paragraph><p>You need to create 2 providers:
+.. 1 provider for the region where your OKE cluster and other resources will be created
+.. 1 provider for the home region. This is required for conducting identity operations. <strong>Note that your home region may not necessarily be the same as your current region.</strong></p></div><div class="olist arabic"><ol class=arabic><li><p>Create a provider.tf file in root add 2 providers:</p><div class=listingblock><div class=content><pre>provider &#34;oci&#34; {
+  fingerprint      = var.api_fingerprint
+  private_key_path = var.api_private_key_path
+  region           = var.region
+  tenancy_ocid     = var.tenancy_id
+  user_ocid        = var.user_id
+}
+
+provider &#34;oci&#34; {
+  fingerprint      = var.api_fingerprint
+  private_key_path = var.api_private_key_path
+  region           = var.home_region
+  tenancy_ocid     = var.tenancy_id
+  user_ocid        = var.user_id
+  alias            = &#34;home&#34;
+}</pre></div></div></li><li><p>Alternatively, you can also specify the key directly:</p><div class=listingblock><div class=content><pre>provider &#34;oci&#34; {
+  fingerprint      = var.api_fingerprint
+  private_key      = var.api_private_key
+  region           = var.regions[&#34;oke&#34;]
+  tenancy_ocid     = var.tenancy_id
+  user_ocid        = var.user_id
+}
+
+provider &#34;oci&#34; {
+  fingerprint      = var.api_fingerprint
+  private_key      = var.api_private_key
+  region           = var.regions[&#34;home&#34;]
+  tenancy_ocid     = var.tenancy_id
+  user_ocid        = var.user_id
+  alias            = &#34;home&#34;
+}</pre></div></div></li><li><p>You can also create use providers (<a href=https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformproviderconfiguration.htm>using differerent methods</a>) such as:</p><div class="olist loweralpha"><ol class=loweralpha type=a><li><p>config file profile</p></li><li><p>auth token</p></li><li><p>instance principal</p></li></ol></div></li><li><p>Set mandatory parameters in the provider depending on your <a href=https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformproviderconfiguration.htm>method of initializing your provider</a>:</p><div class=ulist><ul><li><p>api_fingerprint</p></li><li><p>api_private_key_path</p></li><li><p>compartment_id</p></li><li><p>tenancy_id</p></li><li><p>user_id</p></li><li><p>regions</p></li></ul></div></li></ol></div><div class=paragraph><p>You can set those parameters using:</p></div><div class="olist arabic"><ol class=arabic><li><p>environment variables (e.g. TF_api_fingerprint)</p></li><li><p>the terraform.tfvars</p></li></ol></div><div class=paragraph><p>Please ensure you understand the <a href=https://www.terraform.io/docs/language/values/variables.html#variable-definition-precedence>Terraform variable definition order of precedence</a> and <a href=https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformproviderconfiguration.htm#terraformproviderconfiguration_topic-Order_of_Precedence>that of OCI</a>.</p></div><div class="olist arabic"><ol class=arabic><li><p>Run Terraform:</p><div class=listingblock><div class=content><pre class=highlight><code class=language-bash data-lang=bash>terraform init
+terraform plan
+terraform apply</code></pre></div></div></li></ol></div></div></div></div><div class=sect1><h2 id=provision-using-the-hashicorp-registry-module><a class=link href=#provision-using-the-hashicorp-registry-module>4. Provision using the HashiCorp registry module</a></h2><div class=sectionbody><div class="olist arabic"><ol class=arabic><li><p>In your project root, create a provider.tf file and repeat the steps for creating providers as above.</p></li><li><p>In your project root, create a variables.tf file and add variables for your project. You can copy the existing <a href=https://github.com/oracle-terraform-modules/terraform-oci-oke/blob/main/variables.tf>variables.tf</a> in the OKE module root.</p></li><li><p>In your project root, create a versions.tf file and add the following:</p><div class=listingblock><div class=content><pre>terraform {
+  required_providers {
+    oci = {
+      source                = &#34;oracle/oci&#34;
+      configuration_aliases = [oci.home]
+      version               = &#34;&gt;= 4.67.3&#34;
+    }
+  }
+  required_version = &#34;&gt;= 1.0.0&#34;
+}</pre></div></div></li><li><p>In your project root, create a main.tf file and add the following:</p><div class=listingblock><div class=content><pre>module &#34;oke&#34; {
+  source  = &#34;oracle-terraform-modules/oke/oci&#34;
+  version = &#34;4.2.4&#34;
+  # insert the 9 required variables here
+}</pre></div></div></li><li><p>Edit your OKE module definition and pass the required variables:</p><div class=listingblock><div class=content><pre>module &#34;oke&#34; {
+  source                                =   &#34;oracle-terraform-modules/oke/oci&#34;
+  version                               =   &#34;4.0.0&#34;
+
+  compartment_id                        =   var.compartment_id
+  tenancy_id                            =   var.tenancy_id
+
+  ssh_private_key_path                  =   var.ssh_private_key_path
+  ssh_public_key_path                   =   var.ssh_public_key_path
+
+  label_prefix                          =   var.label_prefix
+  home_region                           =   var.home_region
+  region                                =   var.region
+
+  vcn_dns_label                         =   var.vcn_dns_label
+  vcn_name                              =   var.vcn_name
+
+  create_bastion_host                   =   var.create_bastion_host
+
+  create_operator                       =   var.create_operator
+
+  # add additional parameters for availability_domains, oke etc as you need
+
+  providers = {
+    oci.home = oci.home
+  }
+}</pre></div></div></li><li><p>Run Terraform:</p><div class=listingblock><div class=content><pre class=highlight><code class=language-bash data-lang=bash>terraform init
+terraform plan
+terraform apply</code></pre></div></div></li></ol></div></div></div><div class=sect1><h2 id=related-documentation><a class=link href=#related-documentation>5. Related documentation</a></h2><div class=sectionbody><div class=ulist><ul><li><p><a href=https://github.com/oracle-terraform-modules/terraform-oci-oke/blob/main/docs/instructions.adoc>Detailed Instructions</a></p></li><li><p><a href=https://github.com/oracle-terraform-modules/terraform-oci-oke/blob/main/docs/terraformoptions.adoc>All Terraform configuration options</a> for <a href=https://github.com/oracle-terraform-modules/terraform-oci-oke>this project</a></p></li></ul></div></div></div><ul class=pa0></ul><div class="mt6 instapaper_ignoref"></div></div><aside class="w-30-l mt6-l"></aside></article></main><footer class="bg-black bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=https://hyder.github.io/test-hugo/>&copy; My New Hugo Site 2022</a><div><div class=ananke-socials></div></div></div></footer></body></html>

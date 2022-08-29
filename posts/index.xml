@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on My New Hugo Site</title><link>https://hyder.github.io/test-hugo/posts/</link><description>Recent content in Posts on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://hyder.github.io/test-hugo/posts/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://hyder.github.io/test-hugo/posts/codingconventions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hyder.github.io/test-hugo/posts/codingconventions/</guid><description/></item><item><title/><link>https://hyder.github.io/test-hugo/posts/prerequisites/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hyder.github.io/test-hugo/posts/prerequisites/</guid><description/></item><item><title/><link>https://hyder.github.io/test-hugo/posts/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hyder.github.io/test-hugo/posts/quickstart/</guid><description/></item><item><title/><link>https://hyder.github.io/test-hugo/posts/terraformoptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hyder.github.io/test-hugo/posts/terraformoptions/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on My New Hugo Site</title><link>https://hyder.github.io/test-hugo/posts/</link><description>Recent content in Posts on My New Hugo Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://hyder.github.io/test-hugo/posts/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://hyder.github.io/test-hugo/posts/codingconventions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hyder.github.io/test-hugo/posts/codingconventions/</guid><description/></item><item><title/><link>https://hyder.github.io/test-hugo/posts/prerequisites/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hyder.github.io/test-hugo/posts/prerequisites/</guid><description>This section will guide you through the prerequisites before you can use this project.
+You can proceed to creating the cluster if you have already done these.
+1. Identity and Access Management Rights The Terraform user must have the permission to:
+manage dynamic groups (instance_principal and KMS integration)
+manage cluster-family in compartment
+manage virtual-network-family in compartment
+manage instance-family in compartment
+2. Install Terraform Start by installing Terraform and configuring your path.</description></item><item><title/><link>https://hyder.github.io/test-hugo/posts/quickstart/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hyder.github.io/test-hugo/posts/quickstart/</guid><description>1. Assumptions You have setup the required keys
+You know the required OCIDs
+You have set the necessary OKE policy
+2. Prerequisites git is installed
+ssh client is installed
+Terraform 1.0.0+ is installed
+3. Provision using this git repo Clone the repo:
+git clone https://github.com/oracle-terraform-modules/terraform-oci-oke.git tfoke cd tfoke cp terraform.tfvars.example terraform.tfvars 3.1. Creating Providers You need to create 2 providers: .. 1 provider for the region where your OKE cluster and other resources will be created .</description></item><item><title/><link>https://hyder.github.io/test-hugo/posts/terraformoptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://hyder.github.io/test-hugo/posts/terraformoptions/</guid><description>Configuration Terraform Options:
+Ensure you review the dependencies.
+1. OCI Provider parameters Parameter Description Values Default api_fingerprint
+ssl fingerprint of api public key. Maybe required depending on your authentication method.
+none
+api_private_key
+The contents of the private key file to use with OCI API. This takes precedence over private_key_path if both are specified in the provider. Maybe required depending on your authentication method. Use the heredoc format if you are specifying the key with this variable.</description></item></channel></rss>
