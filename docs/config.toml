@@ -1,7 +1,11 @@
 baseURL = 'https://hyder.github.io/test-hugo/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-theme = "ananke"
+theme = "docsy"
+
+[params]
+    # Custom CSS
+    custom_css = ["css/molokai.css","css/custom.css"]
 
 [security]
 enableInlineShortcodes = false
